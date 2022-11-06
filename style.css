@@ -1,5 +1,31 @@
 body{
     margin: 0;
     padding: 0;
+    background: #000000;
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    font-size: 6vw;
+    color: rgb(253, 255, 118);
+}
+.nav{
+    display:flex;
+    background: #ba482e;
+}
+a{
+    margin:auto;
+    padding: 2vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: #f56126;
+}
+a:hover{
+    margin: auto;
+    padding: 2vw;
+    color: rgb(255, 255, 255);
+    background: #d21e1e;
+}
+div.nav{
+    height: 100px;
 }
