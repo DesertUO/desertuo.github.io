@@ -6,26 +6,39 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 .title{
-    font-size: 6vw;
+    font-size: 4vw;
     color: rgb(253, 255, 118);
 }
 .nav{
-    display:flex;
-    background: #ba482e;
+    display:flexbox;
+    overflow: hidden;
+    height: 46px;
+    background: #1c1721;
 }
-a{
-    margin:auto;
-    padding: 2vw;
+.nav-big {
+    float: left;
+}
+.nav-link{
+    float: left;
+    padding: 14px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    background: #f56126;
+    background: #ba482e;
 }
-a:hover{
-    margin: auto;
-    padding: 2vw;
+a:hover.nav-link{
     color: rgb(255, 255, 255);
     background: #d21e1e;
 }
-div.nav{
-    height: 100px;
+.imgs-container{
+    display: grid;
+}
+.imgs{
+    margin: auto;
+    height: 50vh;
+}
+.imgs-title{
+    margin-top: 0.5vh;
+    display: flex;
+    color: #858585;
+    justify-content: center;
 }
