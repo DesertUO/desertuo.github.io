@@ -86,6 +86,9 @@ Test code for loading screen anim.
     background-color: #fff;
     animation: loader-inner 2s infinite ease-in;
   }
+  .loader-text {
+    font-family: 'Gochi Hand', cursive;
+  }
   
   @keyframes loader {
     0% {
@@ -139,5 +142,41 @@ Test code for loading screen anim.
     margin: auto;
     height: 30vh;
     border: 2px solid rgb(187, 76, 33);
+  }
+}
+
+/*
+Suspensive points
+*/
+.loader-points {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.loader-line {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.loader-points .loader-line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.loader-points .loader-line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+.loader-points .loader-line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+@keyframes loadingC {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
