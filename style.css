@@ -149,6 +149,6 @@ Test code for loading screen anim.
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    overflow-y: hidden;
    }
 }
