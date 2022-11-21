@@ -6,7 +6,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 .title{
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: rgb(253, 255, 118);
 }
 .nav{
@@ -19,6 +19,7 @@ body{
     float: left;
 }
 .nav-link{
+    font-family: 'Gochi Hand', cursive;
     float: left;
     padding: 14px;
     color: rgb(255, 255, 255);
@@ -31,14 +32,25 @@ a:hover.nav-link{
 }
 .imgs-container{
     display: grid;
+    margin-bottom: 10px;
 }
 .imgs{
     margin: auto;
-    height: 200px;
+    height: 30vh;
+    border: 2px solid rgb(187, 76, 33);
 }
+
 .imgs-title{
+    font-family: 'Share Tech', sans-serif;
     margin-top: 0.5vh;
     display: flex;
     color: #858585;
     justify-content: center;
 }
+
+/*
+Custom fonts import
+*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
