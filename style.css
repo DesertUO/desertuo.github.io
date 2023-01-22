@@ -9,6 +9,7 @@ body{
   padding: 0;
   background: #000000;
   color: #ffffff;
+
   font-family: 'Times New Roman', Times, serif;
 }
 .wrapper {
@@ -40,7 +41,7 @@ nav{
   display: flex;
   align-items: center;
 
-  padding: 14px;
+  padding: 0 14px;
 
   color: rgb(255, 255, 255);
   font-family: 'Gochi Hand', cursive;
@@ -55,6 +56,7 @@ a:hover.nav-link{
 }
 .img-container{
   display: grid;
+  justify-content: center;
   margin-bottom: 10px;
 }
 .img-container img{
@@ -63,6 +65,10 @@ a:hover.nav-link{
   width: 50vmin;
   height: auto;
   border: 2px solid rgb(187, 76, 33);
+}
+.img-container p {
+  width: 50vmin;
+  word-wrap: break-word;
 }
 
 .img-title{
@@ -86,11 +92,6 @@ Custom fonts import
 Small/Mobile screens "responsive" media
 */
 @media only screen and (max-width: 600px) {
-  .imgs{
-    margin: auto;
-    height: 30vh;
-    border: 2px solid rgb(187, 76, 33);
-  }
 }
 /*
 Loading styles
