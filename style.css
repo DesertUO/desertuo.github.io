@@ -78,7 +78,25 @@ a:hover.nav-link{
   color: #858585;
   justify-content: center;
 }
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+  background-color: #121212;
+  
+  color: rgba(255, 255, 255, 0.75);
+}
+footer .wrapper {
+  line-height: 15px;
+}
+footer a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 /*
 Custom fonts import
 */
