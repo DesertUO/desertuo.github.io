@@ -12,6 +12,12 @@ body{
 
   font-family: 'Times New Roman', Times, serif;
 }
+hr {
+  background: #fff;
+  border: 0;
+  height: 2px;
+  margin: 0 0 10px 0;
+}
 .wrapper {
   width: 75%;
 }
@@ -223,4 +229,9 @@ Suspensive points
   100% {
     transform: translate(0, 0);
   }
+}
+
+.left-bar {
+  padding: 10px 10px 0 0;
+  margin: 10px 0px 10px 0px;
 }
