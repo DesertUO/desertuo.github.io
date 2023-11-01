@@ -1,5 +1,11 @@
 * {
-  background-color: rgba(33, 187, 64, 0);
+  background-color: rgba(33, 187, 64, .0);
+}
+
+:root {
+  --text-global: 252, 241, 227;
+  --accent-back: 180, 37, 23;
+  --dark-back: 95, 26, 37;
 }
 
 body{
@@ -8,19 +14,64 @@ body{
   margin: 0;
   padding: 0;
   background: #000000;
-  color: #ffffff;
+  color: rgb(var(--text-global));
 
   font-family: 'Times New Roman', Times, serif;
 }
 hr {
-  background: #fff;
+  background: rgb(var(--text-global));
   border: 0;
   height: 2px;
   margin: 0 0 10px 0;
 }
-.wrapper {
-  width: 75%;
+.content p {
+  font-size: 20px;
 }
+.wrapper {
+  width: 60vw;
+}
+
+.left-bar {
+  width: 20vw;
+  word-wrap: break-word;
+}
+.left-bar > ul {
+  list-style: none;
+}
+.left-bar > ul > li {
+  border: #fff solid 1px;
+  border-radius: 6%;
+  padding: 10px 8px;
+  margin: 5px;
+}
+.left-bar > ul > .news-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+}
+.left-bar > ul > li > .news-label {
+
+  align-self: flex-end;
+  padding: 2px 0px;
+  width: 25%;
+
+  border-radius: 15%;
+
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+
+}
+
+.red-bg {
+  border: 2px solid;
+  border-color: rgb(255, 34, 34);
+  background-color: rgb(161, 0, 0);
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -29,7 +80,7 @@ hr {
 
 header {
   width: 100%;
-  background: #1c1721;
+  background: rgba(42, 13, 0, 0.184);
 }
 nav{
   width: 100%;
@@ -49,16 +100,17 @@ nav{
 
   padding: 0 14px;
 
-  color: rgb(255, 255, 255);
+  background: rgb(var(--dark-back),.0);
+
+  color: rgba(var(--text-global),.7);
   font-family: 'Gochi Hand', cursive;
   text-decoration: none;
 
-  background: #ba482e;
 }
 a:hover.nav-link{
-  color: rgb(255, 255, 255);
+  color: rgba(var(--text-global),1);
   
-  background: #d21e1e;
+  background: rgba(var(--accent-back),.0);
 }
 .img-container{
   display: grid;
