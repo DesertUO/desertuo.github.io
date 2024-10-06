@@ -27,36 +27,41 @@ hr {
 .content p {
   font-size: 20px;
 }
+.wrapper-main {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
 .wrapper {
   width: 60vw;
 }
 
-.left-bar {
+.side-panel {
   width: 20vw;
   word-wrap: break-word;
 }
-.left-bar > ul {
+.side-panel > ul {
   list-style: none;
 }
-.left-bar > ul > li {
+.side-panel > ul > li {
   border: #fff solid 1px;
   border-radius: 6%;
   padding: 10px 8px;
   margin: 5px;
 }
-.left-bar > ul > .news-li {
+.side-panel > ul > .news-li {
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 20px;
 }
-.left-bar > ul > li > .news-label {
+.side-panel > ul > li > .news-label {
 
   align-self: flex-end;
   padding: 2px 0px;
   width: 25%;
 
-  border-radius: 25%;
+  border-radius: 20%;
 
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -94,23 +99,31 @@ nav{
 .nav-big img {
   height: 100%;
 }
+.nav-container {
+  display: flex;
+  gap: 4px;
+  padding-right: 10px;
+}
 .nav-link{
   display: flex;
   align-items: center;
 
   padding: 0 14px;
-
-  background: rgb(var(--dark-back),.0);
-
+  border-radius: 10px;
+  
+  background: rgb(var(--dark-back),.2);
+  box-shadow: inset -1px -1px 1px 1px #00000033;
+  
   color: rgba(var(--text-global),.7);
   font-family: 'Gochi Hand', cursive;
   text-decoration: none;
-
+  transition: all ease-in 0.2s;
 }
 a:hover.nav-link{
   color: rgba(var(--text-global),1);
+  box-shadow: 1px 1px 1px 1px #0000004b;
   
-  background: rgba(var(--accent-back),.0);
+  background: rgba(49, 0, 0, 0.224);
 }
 .img-container{
   display: grid;
@@ -197,11 +210,19 @@ Loading styles
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #fff;
+    background-color: red;
     animation: loader-inner 2s infinite ease-in;
   }
   .loader-text {
     font-family: 'Gochi Hand', cursive;
+    font-size: 5vh;
+    background-image: url(/lib/media/images/background.webp);
+    background-size: cover;
+    background-position: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+    background-clip: text;
+    margin: 0;
   }
   
   @keyframes loader {
@@ -283,7 +304,19 @@ Suspensive points
   }
 }
 
-.left-bar {
+.side-panel {
   padding: 10px 10px 0 0;
   margin: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-main {
+    width: 100%;
+    flex-direction: column;
+  }
+  .wrapper-main> * {
+    width: 90%;
+    row-gap: 10px;
+    margin: auto;
+  }
 }
