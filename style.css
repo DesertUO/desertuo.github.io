@@ -1,11 +1,18 @@
-* {
-  background-color: rgba(33, 187, 64, .0);
-}
+/*
+Custom fonts import
+*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 :root {
   --text-global: 252, 241, 227;
   --accent-back: 180, 37, 23;
   --dark-back: 95, 26, 37;
+}
+
+* {
+  background-color: rgba(33, 187, 64, .0);
 }
 
 body{
@@ -49,7 +56,7 @@ hr {
   padding: 10px 8px;
   margin: 5px;
 }
-.side-panel > ul > .news-li {
+.side-panel > .news-ul > .news-li {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -168,12 +175,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-/*
-Custom fonts import
-*/
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 
 
